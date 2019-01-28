@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.2", "setuptools_scm[toml]>=3.4.3", "requests",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ELFMachine"
+# version = 0.1
+authors = [{name = "KOLANICH"}]
+description = "Just a enum used in e_machine field of ELF header"
+readme = "ReadMe.md"
+keywords = ["ELF", "header", "binary", "enum", "e_machine", "x86", "AI32", "i686", "amd64", "ARM", "RISCV"]
+license = {text = "BSD-2-Clause AND BSD-3-Clause AND Apache-2"}
+classifiers = [
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3",
+	"Development Status :: 4 - Beta",
+	"Environment :: Other Environment",
+	"Intended Audience :: Developers",
+	"License :: OSI Approved :: BSD License",
+	"License :: OSI Approved :: Apache Software License",
+	"Operating System :: OS Independent",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://codeberg.org/KOLANICH-libs/ELFMachine.py"
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = true
+
