@@ -30,6 +30,9 @@ from pathlib import Path
 from setuptools import setup
 import re
 from os import environ
+from warnings import warn
+
+warn("We have moved from M$ GitHub to https://codeberg.org/KOLANICH-libs/ELFMachine.py , read why on https://codeberg.org/KOLANICH/Fuck-GuanTEEnomo .")
 
 try:
 	import httpx as requests
